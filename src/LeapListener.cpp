@@ -15,7 +15,7 @@ void LeapListener::onInit(const Controller& controller) {
 
 void LeapListener::onConnect(const Controller& controller) {
   //std::cout << "Connected" << std::endl;
-  controller.setPolicyFlags(Controller::POLICY_BACKGROUND_FRAMES)
+  controller.setPolicyFlags(Controller::POLICY_BACKGROUND_FRAMES);
   controller.enableGesture(Gesture::TYPE_CIRCLE);
   controller.enableGesture(Gesture::TYPE_KEY_TAP);
   controller.enableGesture(Gesture::TYPE_SCREEN_TAP);
